@@ -46,8 +46,6 @@
     return `<i class="sprinkle" data-s="${s}" data-r="${r}" style="left:${x}%;top:${y}%;background:${sc[i % 6]};transform:rotate(${r}deg)"></i>`;
   }).join('');
 
-  $('#ribbon').innerHTML = Array(8).fill('<span>Theme cakes</span><b>✦</b><span>Cheesecakes</span><b>♥</b><span>Birthday cakes</span><b>✦</b><span>Anniversary cakes</span><b>♥</b><span>Made to order</span><b>✦</b>').join('');
-
   $$('.wave').forEach(s => {
     let d = 'M0 40'; for (let x = 0; x < 2400; x += 200) d += ` Q${x + 50} 0 ${x + 100} 40 T${x + 200} 40`;
     s.setAttribute('viewBox', '0 0 2400 70'); s.setAttribute('preserveAspectRatio', 'none'); s.setAttribute('aria-hidden', 'true');

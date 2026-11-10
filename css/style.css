@@ -88,10 +88,6 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
 .sunflower svg{display:block;width:100%;height:auto;animation:spin 40s linear infinite}
 @keyframes spin{to{rotate:360deg}}
 
-/* ---------- ribbon ---------- */
-.ribbon{background:var(--deep);color:var(--bg);overflow:hidden;white-space:nowrap;rotate:-1.2deg;scale:1.03;margin:10px 0 70px}
-.ribbon div{display:inline-block;font-family:var(--display);font-weight:600;font-size:clamp(20px,2.6vw,32px);padding:14px 0;animation:flow 34s linear infinite}
-.ribbon span{margin:0 22px}.ribbon b{color:var(--sun);font-weight:600}
 @keyframes flow{to{transform:translateX(-50%)}}
 
 /* ---------- waves + sections ---------- */
