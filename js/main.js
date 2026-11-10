@@ -54,11 +54,6 @@
     s.innerHTML = `<path d="${d} V70 H0Z" fill="${s.dataset.fill}"/>`;
   });
 
-  /* ---------- specialities ---------- */
-  const fan = (cat, n) => CAKES.filter(c => c.cat === cat).slice(0, n).map(c => `<img loading="lazy" src="${img(c)}" alt="${c.title}">`).join('');
-  $('#fan-theme').innerHTML = fan('theme', 3);
-  $('#fan-cheesecake').innerHTML = fan('cheesecake', 1);
-
   /* ---------- gallery + filters ---------- */
   $('#cards').innerHTML = CAKES.map((c, i) => `
     <button class="sc" data-i="${i}" data-cat="${c.cat}" data-reveal="${(i % 3) * 120}" aria-label="${c.title}: see details">
@@ -79,7 +74,6 @@
     }), reduced ? 0 : 260);
   };
   $('#filters').addEventListener('click', e => { const b = e.target.closest('.chip'); if (b) setFilter(b.dataset.f); });
-  $$('[data-filter]').forEach(b => b.onclick = () => { setFilter(b.dataset.filter); $('#cakes').scrollIntoView(); });
   $('#cards').addEventListener('click', e => { const c = e.target.closest('.sc'); if (c) openSheet(+c.dataset.i); });
 
   /* ---------- cake detail sheet ---------- */
