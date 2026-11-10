@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bakeloveaffair.com/sitemap.xml

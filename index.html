@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BakeLoveAffair · Theme cakes and cheesecakes, homemade in Berlin</title>
+<meta name="description" content="BakeLoveAffair: custom theme cakes and cheesecakes, designed and baked by hand in a home kitchen in Berlin. Say hello on WhatsApp.">
+<meta name="theme-color" content="#FFF3EA">
+<link rel="canonical" href="https://bakeloveaffair.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bakeloveaffair.com/">
+<meta property="og:title" content="BakeLoveAffair · Baked with love, made for you">
+<meta property="og:description" content="Custom theme cakes and cheesecakes, homemade in Berlin.">
+<meta property="og:image" content="https://bakeloveaffair.com/assets/logo/logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="assets/logo/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Josefin+Sans:wght@500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="nav-bar">
+    <a class="brand" href="#top" aria-label="BakeLoveAffair, back to top"><img src="assets/logo/mixer.png" alt="" width="48" height="46"><span>BakeLoveAffair</span></a>
+    <ul>
+      <li><a href="#special">Specialities</a></li>
+      <li><a href="#cakes">Cakes</a></li>
+      <li><a href="#wish">Dream a cake</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="icon-btn" data-ig aria-label="BakeLoveAffair on Instagram"><i data-icon="ig"></i></a>
+      <a class="btn sm wa" data-wa aria-label="Order on WhatsApp"><i data-icon="wa"></i><span>WhatsApp</span></a>
+      <button class="icon-btn burger" id="burger" aria-label="Menu" aria-expanded="false"><i data-icon="menu"></i></button>
+    </div>
+  </div>
+  <div class="menu" id="menu">
+    <a href="#special">Specialities</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#wish">Dream a cake</a>
+    <a href="#how">How it works</a>
+    <a href="#about">About</a>
+    <a data-ig>Instagram ↗</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div id="sprinkles" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i> Cake designer · Berlin</span>
+      <h1 id="h1" aria-label="Baked with love, made for you."></h1>
+      <p class="lead" data-reveal="700">Theme cakes and cheesecakes, dreamed up, designed and baked by hand in a home kitchen in Berlin.</p>
+      <div class="cta" data-reveal="850">
+        <a class="btn wa" data-wa><i data-icon="wa"></i> Order on WhatsApp</a>
+        <a class="btn soft" href="#wish">Dream up a cake</a>
+      </div>
+      <a class="follow" data-ig data-reveal="1000"><i data-icon="ig"></i> Follow @bakeloveaffair</a>
+    </div>
+    <div class="stage">
+      <div class="blob"></div>
+      <span class="spark" style="left:2%;top:6%">✦</span><span class="spark" style="right:14%;bottom:-2%;animation-delay:-1s">✦</span><span class="spark" style="left:16%;bottom:2%;animation-delay:-1.7s;font-size:14px">✦</span>
+      <div class="shots" id="shots"></div>
+      <button class="label" id="label" aria-label="See details of this cake"><span id="lt"></span><small id="ls"></small></button>
+      <div class="sunflower" aria-hidden="true"></div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon" aria-hidden="true"><div id="ribbon"></div></div>
+
+<section class="pad" id="special" style="padding-top:40px">
+  <div class="wrap">
+    <div class="title"><h2 data-reveal>Two things she does <em>best</em></h2><p data-reveal="100">Cakes that look like your favourite things, and cheesecakes that disappear fast.</p></div>
+    <div class="duo">
+      <article class="spec" style="--c:var(--lav)" data-reveal>
+        <span class="kicker">Speciality no. 1</span>
+        <h3>Theme cakes</h3>
+        <p>A favourite character, a hobby, a season, an inside joke. Tell her the theme and she designs a cake around it.</p>
+        <button class="btn sm" data-filter="theme">See theme cakes</button>
+        <div class="fan" id="fan-theme"></div>
+      </article>
+      <article class="spec" style="--c:var(--mint)" data-reveal="140">
+        <span class="kicker">Speciality no. 2</span>
+        <h3>Cheesecakes</h3>
+        <p>Creamy, generous and made from scratch. The pistachio one has its own fan club.</p>
+        <button class="btn sm" data-filter="cheesecake">See cheesecakes</button>
+        <div class="fan one" id="fan-cheesecake"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="wavebox"><svg class="wave" data-fill="#FBD3DD"></svg></div>
+<section class="sig pad" id="cakes">
+  <div class="wrap">
+    <div class="title"><h2 data-reveal>The <em>cake</em> gallery</h2><p data-reveal="100">Tap a cake to see what's inside. Every one is made to order, so yours can be any flavour, colour or theme.</p></div>
+    <div class="filters" id="filters" role="group" aria-label="Filter cakes"></div>
+    <div class="cards" id="cards"></div>
+    <p class="more-note" data-reveal>Fresh cakes land on Instagram first. <a data-ig>See the latest →</a></p>
+  </div>
+</section>
+<div class="wavebox" style="background:#FBD3DD"><svg class="wave rev" data-fill="#CDEFE0"></svg></div>
+
+<section class="wish pad" id="wish">
+  <div class="wrap">
+    <div class="title"><h2 data-reveal>Dream up <em>your</em> cake</h2><p data-reveal="100">Pick a few things and we'll write the WhatsApp message for you.</p></div>
+    <div class="wishgrid">
+      <div data-reveal>
+        <div class="q"><h3><span>1</span> What's the occasion?</h3><div class="chips" data-k="occasion"><button class="chip">Birthday</button><button class="chip">Anniversary</button><button class="chip">Kids' party</button><button class="chip">Baby shower</button><button class="chip">Just because</button></div></div>
+        <div class="q"><h3><span>2</span> What are you craving?</h3><div class="chips" data-k="bake"><button class="chip">Theme cake</button><button class="chip">Cheesecake</button><button class="chip">Birthday cake</button><button class="chip">Anniversary cake</button></div></div>
+        <div class="q"><h3><span>3</span> How many people?</h3><div class="chips" data-k="guests"><button class="chip">Up to 10</button><button class="chip">10 to 20</button><button class="chip">More than 20</button></div></div>
+        <div class="q"><h3><span>4</span> Any theme or flavour in mind?</h3><input class="field" id="idea" type="text" maxlength="80" placeholder="e.g. unicorns, pistachio, football" aria-label="Theme or flavour idea"></div>
+        <div class="q"><h3><span>5</span> When is it?</h3><input class="field" type="date" id="date" aria-label="Date of the occasion" style="width:auto"></div>
+      </div>
+      <div class="phone" data-reveal="150">
+        <div class="top"><img src="assets/logo/icon-192.png" alt=""><div>BakeLoveAffair<small>Cake designer · Berlin</small></div></div>
+        <div class="bubble" id="bubble" aria-live="polite"></div>
+        <a class="btn wa" id="send" target="_blank" rel="noopener"><i data-icon="wa"></i> Send on WhatsApp</a>
+        <p class="note">Nothing is sent until you press send in WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="wavebox" style="background:#CDEFE0"><svg class="wave" data-fill="#FFF3EA"></svg></div>
+
+<section class="pad" id="how">
+  <div class="wrap">
+    <div class="title"><h2 data-reveal>From <em>hello</em> to happy</h2></div>
+    <div class="proc" id="proc">
+      <svg class="path" viewBox="0 0 1000 170" preserveAspectRatio="none" fill="none" aria-hidden="true"><path id="pp" d="M125 48 C250 48 250 118 375 118 S500 48 625 48 S750 118 875 118" stroke="#F47C6C" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14" vector-effect="non-scaling-stroke"/></svg>
+      <div class="procgrid">
+        <div class="ps" style="--c:var(--butter)"><div class="ic">👋</div><h3>Say hello</h3><p>Send a WhatsApp message. No forms, no fuss.</p></div>
+        <div class="ps" style="--c:var(--pink)"><div class="ic">💭</div><h3>Share the dream</h3><p>Occasion, date, guests, theme and favourite flavours.</p></div>
+        <div class="ps" style="--c:var(--lav)"><div class="ic">✏️</div><h3>She designs it</h3><p>Designer by day: every cake starts as an idea made for you.</p></div>
+        <div class="ps" style="--c:var(--mint)"><div class="ic">🎂</div><h3>Baked fresh</h3><p>Made by hand in Berlin, ready for your celebration.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wavebox"><svg class="wave rev" data-fill="#FFE8A3"></svg></div>
+<section class="gal" id="insta">
+  <div class="title"><h2 data-reveal>Straight from the <em>'gram</em></h2><p data-reveal="100">New cakes, reels and recipes, first on Instagram.</p></div>
+  <div class="row" id="r1"></div>
+  <div class="row b" id="r2"></div>
+  <div class="center"><a class="btn ig" data-ig data-reveal><i data-icon="ig"></i> Follow @bakeloveaffair</a></div>
+</section>
+<div class="wavebox" style="background:#FFE8A3"><svg class="wave" data-fill="#FFF3EA"></svg></div>
+
+<section class="pad" id="about">
+  <div class="wrap aboutgrid">
+    <div class="me" data-reveal>
+      <img src="assets/img/anniversary-cake.jpg" alt="The baker behind BakeLoveAffair with a cake she made" loading="lazy">
+      <div class="stamp"><img src="assets/logo/mixer.png" alt="BakeLoveAffair logo"></div>
+    </div>
+    <div>
+      <h2 data-reveal>Baker by <em>night</em>,<br>designer by day</h2>
+      <p data-reveal="80">“Whisking dreams into reality as self-taught baker by night, and crafting innovative designs as a product designer by day.”</p>
+      <p data-reveal="160">BakeLoveAffair started in a home kitchen in Berlin and grew one birthday, one anniversary and one happy slice at a time.</p>
+      <div class="daynight" data-reveal="240">
+        <div style="background:var(--lav)"><b>🌙 By night</b>Whisking, piping and testing new recipes</div>
+        <div style="background:var(--butter)"><b>☀️ By day</b>Designing products, sketching cake ideas</div>
+      </div>
+      <a class="btn ig" data-ig data-reveal="320"><i data-icon="ig"></i> Say hi on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<div class="wavebox"><svg class="wave" data-fill="#F47C6C"></svg></div>
+<footer class="foot">
+  <div class="sunflower l" aria-hidden="true"></div><div class="sunflower r" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative">
+    <h2 data-reveal>Let's bake your day</h2>
+    <p class="big" data-reveal="100">One message is all it takes.</p>
+    <a class="btn" data-reveal="200" data-wa><i data-icon="wa"></i> Chat on WhatsApp</a>
+    <div class="foot-base">
+      <span>© <span id="year"></span> BakeLoveAffair</span>
+      <div class="mid">
+        <a class="icon-btn" data-ig aria-label="Instagram"><i data-icon="ig"></i></a>
+        <a class="icon-btn" data-wa aria-label="WhatsApp"><i data-icon="wa"></i></a>
+      </div>
+      <span>Homemade with love in Berlin</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" data-wa aria-label="Order a cake on WhatsApp"><i data-icon="wa"></i><span>Order a cake</span></a>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sh-title">
+  <div class="sheet-in">
+    <div class="sheet-photo" id="sh-photo"><div class="sunflower" aria-hidden="true"></div><img id="sh-img" alt=""></div>
+    <div class="sheet-body">
+      <div class="sheet-nav"><button class="icon-btn" id="sh-prev" aria-label="Previous cake">←</button><button class="icon-btn" id="sh-next" aria-label="Next cake">→</button></div>
+      <button class="icon-btn x" id="sh-close" aria-label="Close">✕</button>
+      <span class="pill" id="sh-tag"></span>
+      <h2 id="sh-title"></h2>
+      <p class="quote" id="sh-quote"></p>
+      <p class="desc" id="sh-desc"></p>
+      <dl class="facts" id="sh-facts"></dl>
+      <div class="sheet-cta">
+        <a class="btn wa" id="sh-wa" target="_blank" rel="noopener"><i data-icon="wa"></i> Ask about this cake</a>
+        <a class="follow" id="sh-reel" target="_blank" rel="noopener" style="margin:0"><i data-icon="ig"></i> Watch the reel</a>
+      </div>
+      <p class="sheet-note">Made to order. Size, flavour, colours and theme can all be changed to suit you.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
