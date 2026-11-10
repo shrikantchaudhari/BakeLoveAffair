@@ -5,7 +5,7 @@
 window.SITE = {
   // WhatsApp number in international format, digits only, no "+" or spaces.
   // Example for a German mobile: '4915112345678'
-  whatsapp: '',
+  whatsapp: '4915165026942',
   instagram: 'https://www.instagram.com/bakeloveaffair/',
   handle: '@bakeloveaffair',
   defaultMessage: 'Hi BakeLoveAffair! I found you through your website and would love to ask about a cake.',
